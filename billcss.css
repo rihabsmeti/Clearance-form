@@ -1,0 +1,217 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #e2e8f0 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 100%;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 25px 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .divider {
+        height: 4px;
+        background: linear-gradient(90deg, #3498db, #2c3e50);
+        margin: 10px 0 15px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        opacity: 0.9;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+
+      .content {
+        padding: 30px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 22px;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #ecf0f1;
+      }
+
+      .pdf-preview {
+        background: #f8f9fa;
+        border: 2px dashed #bdc3c7;
+        border-radius: 8px;
+        padding: 25px;
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .pdf-icon {
+        font-size: 40px;
+        color: #e74c3c;
+        margin-bottom: 15px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: border 0.3s;
+      }
+
+      input:focus,
+      select:focus {
+        border-color: #3498db;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+      }
+
+      .finance-details {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .detail-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .detail-row:last-child {
+        border-bottom: none;
+      }
+
+      .detail-label {
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .detail-value {
+        font-weight: 500;
+      }
+
+      .charges {
+        color: #e74c3c;
+      }
+
+      .balance {
+        color: #3498db;
+      }
+
+      .payment-section {
+        background: #edf7ff;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .btn {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .btn:hover {
+        background: #2980b9;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-icon {
+        margin-right: 8px;
+      }
+
+      .action-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .btn-secondary {
+        background: #95a5a6;
+      }
+
+      .btn-secondary:hover {
+        background: #7f8c8d;
+      }
+
+      .pay-btn {
+        background: #27ae60;
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 18px;
+      }
+
+      .pay-btn:hover {
+        background: #219653;
+      }
+
+      @media (max-width: 768px) {
+        .action-buttons {
+          flex-direction: column;
+        }
+
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }

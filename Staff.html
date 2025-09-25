@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student List Form Review</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="staffcss.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student List</h1>
+        <div class="header-buttons">
+          <button class="header-btn">
+            <i class="fas fa-filter"></i> Filters
+          </button>
+          <button class="header-btn"><i class="fas fa-sort"></i> Sort</button>
+          <button class="header-btn">
+            <i class="fas fa-download"></i> Export
+          </button>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+
+      <div class="content">
+        <div class="filters">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search students..." />
+          </div>
+
+          <button class="filter-btn">
+            <i class="fas fa-user-graduate"></i> All Students
+          </button>
+
+          <button class="filter-btn"><i class="fas fa-tag"></i> Status</button>
+        </div>
+
+        <table class="student-table">
+          <thead>
+            <tr>
+              <th>STUDENT NAME</th>
+              <th>ITEM</th>
+              <th>STATUS</th>
+              <th>COST</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rihab Smati</td>
+              <td>Lab Equipements</td>
+              <td>
+                <span class="status status-returned">
+                  <i class="fas fa-check-circle status-icon"></i>
+                  Returned
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-zero">$0</td>
+            </tr>
+            <tr>
+              <td>Fahd</td>
+              <td>Room keys</td>
+              <td>
+                <span class="status status-returned">
+                  <i class="fas fa-check-circle status-icon"></i>
+                  Returned
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-zero">$0</td>
+            </tr>
+            <tr>
+              <td>Ahmed Joudi</td>
+              <td>Textbooks</td>
+              <td>
+                <span class="status status-returned">
+                  <i class="fas fa-check-circle status-icon"></i>
+                  Returned
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$45</td>
+            </tr>
+            <tr>
+              <td>Sumaiya</td>
+              <td>Calculator</td>
+              <td>
+                <span class="status status-lost">
+                  <i class="fas fa-exclamation-circle status-icon"></i>
+                  Lost
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$85</td>
+            </tr>
+            <tr>
+              <td>Ismail</td>
+              <td>Laptop Charger</td>
+              <td>
+                <span class="status status-lost">
+                  <i class="fas fa-exclamation-circle status-icon"></i>
+                  Lost
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$65</td>
+            </tr>
+            <tr>
+              <td>Magda</td>
+              <td>Lab Coat</td>
+              <td>
+                <span class="status status-not-started">
+                  <i class="fas fa-clock status-icon"></i>
+                  Not started
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$35</td>
+            </tr>
+            <tr>
+              <td>Fida</td>
+              <td>Safety Goggles</td>
+              <td>
+                <span class="status status-not-started">
+                  <i class="fas fa-clock status-icon"></i>
+                  Not started
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$25</td>
+            </tr>
+            <tr>
+              <td>Regean</td>
+              <td>Library Books</td>
+              <td>
+                <span class="status status-not-started">
+                  <i class="fas fa-clock status-icon"></i>
+                  Not started
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$55</td>
+            </tr>
+            <tr>
+              <td>Seth</td>
+              <td>Sports Equipment</td>
+              <td>
+                <span class="status status-not-started">
+                  <i class="fas fa-clock status-icon"></i>
+                  Not started
+                </span>
+                <span class="arrow">↔</span>
+              </td>
+              <td class="cost cost-pending">$75</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="action-buttons">
+          <button class="btn">
+            <i class="fas fa-check-circle btn-icon"></i> Submit Review
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

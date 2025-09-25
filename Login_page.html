@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="Students.html">Students</a></li>
+          <li><a href="Staff.html">Staff</a></li>
+          <li><a href="Security.html">Security</a></li>
+          <li><a href="Bill.html">Bill</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Background image -->
+      <div class="background">
+        <img
+          src="C:\Users\rihab\OneDrive\Desktop\CS Project\img.jpg"
+          alt="Building Background"
+        />
+      </div>
+
+      <!-- Login Box -->
+      <div class="login-box">
+        <h2>LOGIN TO YOUR ACCOUNT</h2>
+        <form id="loginForm" action="/login" method="POST">
+          <label>Email Address :</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label>Password :</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit">LOGIN</button>
+        </form>
+        <p id="message" style="color: red; margin-top: 10px"></p>
+      </div>
+    </div>
+
+    <!-- Footer Info -->
+    <footer>
+      <div class="footer-info">
+        <div class="footer-item">
+          <span class="icon">📞</span>
+          <div>
+            <strong>Phone</strong><br />
+            +27 11 699 3000
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <span class="icon">📧</span>
+          <div>
+            <strong>E-Mail</strong><br />
+            admissions@africanleadershipacademy.org
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <span class="icon">🌐</span>
+          <div>
+            <strong>Website</strong><br />
+            www.africanleadershipacademy.org
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <span class="icon">📍</span>
+          <div>
+            <strong>Address</strong><br />
+            1050 Pritchard Ave, Honeydew, Roodepoort, 2040
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const role = document
+            .getElementById("role")
+            .value.trim()
+            .toLowerCase();
+          const email = document.getElementById("email").value.trim();
+          const password = document.getElementById("password").value.trim();
+          const message = document.getElementById("message");
+
+          // Simple validation
+          if (!role || !email || !password) {
+            message.textContent = "⚠️ Please fill in all fields.";
+            return;
+          }
+
+          // Fake authentication logic
+          if (password.length < 6) {
+            message.textContent = "❌ Password must be at least 6 characters.";
+            return;
+          }
+
+          // Role-based redirection
+          if (role === "student") {
+            window.location.href = "Students.html";
+          } else if (role === "staff") {
+            window.location.href = "Staff.html";
+          } else if (role === "security") {
+            window.location.href = "Security.html";
+          } else if (role === "bill") {
+            window.location.href = "Bill.html";
+          } else {
+            message.textContent =
+              "⚠️ Invalid role. Try: student, staff, security, or bill.";
+          }
+        });
+    </script>
+  </body>
+</html>

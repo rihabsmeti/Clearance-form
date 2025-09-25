@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Clearance Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="securitycss.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student List</h1>
+        <div class="header-buttons">
+          <button class="header-btn">
+            <i class="fas fa-filter"></i> Filters
+          </button>
+          <button class="header-btn"><i class="fas fa-sort"></i> Sort</button>
+          <button class="header-btn">
+            <i class="fas fa-download"></i> Export
+          </button>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+
+      <div class="content">
+        <div class="section-title">
+          <i class="fas fa-shield-alt"></i>
+          SECURITY
+        </div>
+
+        <div class="stats">
+          <div class="stat-card stat-approved">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Approved</div>
+          </div>
+          <div class="stat-card stat-pending">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Pending</div>
+          </div>
+          <div class="stat-card stat-rejected">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Rejected</div>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search students..." />
+          </div>
+
+          <button class="filter-btn">
+            <i class="fas fa-user-graduate"></i> All Students
+          </button>
+
+          <button class="filter-btn"><i class="fas fa-tag"></i> Status</button>
+
+          <button class="filter-btn">
+            <i class="fas fa-check-circle"></i> Approval
+          </button>
+        </div>
+
+        <table class="security-table">
+          <thead>
+            <tr>
+              <th>STUDENT NAME</th>
+              <th>STATUS</th>
+              <th>APPROVAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rihab Smati</td>
+              <td>
+                <span class="status status-finished">Finished</span>
+              </td>
+              <td>
+                <span class="approval approval-yes">YES</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Fahd</td>
+              <td>
+                <span class="status status-unfinished">UnFinished</span>
+              </td>
+              <td>
+                <span class="approval approval-yes">YES</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Sumaiya</td>
+              <td>
+                <span class="status status-finished">Finished</span>
+              </td>
+              <td>
+                <span class="approval approval-yes">YES</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Ahmed Joudi</td>
+              <td>
+                <span class="status status-unfinished">UnFinished</span>
+              </td>
+              <td>
+                <span class="approval approval-no">NO</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Ismail</td>
+              <td>
+                <span class="status status-pending">In Progress</span>
+              </td>
+              <td>
+                <span class="approval approval-no">NO</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Magda</td>
+              <td>
+                <span class="status status-finished">Finished</span>
+              </td>
+              <td>
+                <span class="approval approval-yes">YES</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Fida</td>
+              <td>
+                <span class="status status-finished">Finished</span>
+              </td>
+              <td>
+                <span class="approval approval-yes">YES</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Seth</td>
+              <td>
+                <span class="status status-unfinished">UnFinished</span>
+              </td>
+              <td>
+                <span class="approval approval-no">NO</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Regean</td>
+              <td>
+                <span class="status status-pending">In Progress</span>
+              </td>
+              <td>
+                <span class="approval approval-no">NO</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="action-buttons">
+          <button class="btn">
+            <i class="fas fa-check-circle btn-icon"></i> Submit Review
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
